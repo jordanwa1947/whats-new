@@ -1,6 +1,12 @@
 import React from 'react';
 import './NewsContainer.css'
 
-// NEWSCONTAINER COMPONENT CODE GOES HERE
+function NewsContainer(props) {
+  return (
+    <section className="new-container">
+      <p>Test</p>
+    </section>
+  )
+}
 
 export default NewsContainer;
