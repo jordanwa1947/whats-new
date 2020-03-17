@@ -1,0 +1,8 @@
+.article-card {
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.article-card img {
+  height: 150px;
+}
