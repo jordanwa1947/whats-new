@@ -1,14 +1,14 @@
 import React from 'react';
 import './Menu.css'
 
-function Menu() {
+function Menu({displayArticles}) {
   return (
     <ul className="article-type-menu">
-      <li>Local News</li>
-      <li>Technology</li>
-      <li>Entertainment</li>
-      <li>Science</li>
-      <li>Health</li>
+      <li onClick={ () => displayArticles("local") }>Local News</li>
+      <li onClick={ () => displayArticles("technology") }>Technology</li>
+      <li onClick={ () => displayArticles("entertainment") }>Entertainment</li>
+      <li onClick={ () => displayArticles("science") }>Science</li>
+      <li onClick={ () => displayArticles("health") }>Health</li>
     </ul>
   )
 }
