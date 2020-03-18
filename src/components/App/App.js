@@ -31,10 +31,20 @@ class App extends Component {
     })
   }
 
+  searchArticles = (query) => {
+    const queryRegEx = new RegExp(query.toLowerCase());
+    const matchingArticles = this.state.selectedArticles.filter(article => {
+      return queryRegEx.test(article.headline.toLowerCase());
+    })
+    this.setState({
+      selectedArticles: matchingArticles
+    })
+  }
+
   render () {
     return (
       <div className="app">
-        <SearchForm />
+        <SearchForm searchArticles={this.searchArticles} />
         <Menu displayArticles={this.displayArticles}/>
         <NewsContainer articles={this.state.selectedArticles} />
       </div>
