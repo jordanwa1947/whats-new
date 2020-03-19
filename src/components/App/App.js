@@ -44,7 +44,10 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <SearchForm searchArticles={this.searchArticles} />
+        <header>
+          <h1>What's New</h1>
+          <SearchForm searchArticles={this.searchArticles} />
+        </header>
         <Menu displayArticles={this.displayArticles}/>
         <NewsContainer articles={this.state.selectedArticles} />
       </div>
