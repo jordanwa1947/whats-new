@@ -1,3 +1,13 @@
 .article-type-menu li {
   color: white;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.article-type-menu {
+  background: #141527;
+  text-align: left;
 }
