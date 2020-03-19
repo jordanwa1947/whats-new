@@ -45,11 +45,13 @@ class App extends Component {
     return (
       <div className="app">
         <header>
-          <h1>What's New</h1>
+          <h1 className="page-title">What's <span>New?</span></h1>
           <SearchForm searchArticles={this.searchArticles} />
         </header>
-        <Menu displayArticles={this.displayArticles}/>
-        <NewsContainer articles={this.state.selectedArticles} />
+        <main>
+          <Menu displayArticles={this.displayArticles}/>
+          <NewsContainer articles={this.state.selectedArticles} />
+        </main>
       </div>
     );
   }

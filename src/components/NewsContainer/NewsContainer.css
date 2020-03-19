@@ -1,5 +1,6 @@
 .new-container {
-  background-color: white;
   display: flex;
   flex-wrap: wrap;
+  background: #141527;
+  justify-content: center;
 }

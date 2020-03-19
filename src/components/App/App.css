@@ -5,9 +5,28 @@
 }
 
 .app {
-  display: flex;
   background: #141527;
   height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+.page-title {
+  color: white;
+  display: inline-block;
+  margin: 26px 200px 36px 30px;
+  margin: 30px 200px 36px 30px;
+  font-size: 2.5em;
+}
+
+.page-title span {
+  color: rgb(245 176 62);
+}
+
+main {
+  display: flex;
+}
+
+header {
+  text-align: left;
 }
