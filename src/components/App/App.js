@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className="app">
         <header>
-          <h1 className="page-title">What's New?</h1>
+          <h1 className="page-title">What's <span>New?</span></h1>
           <SearchForm searchArticles={this.searchArticles} />
         </header>
         <main>
