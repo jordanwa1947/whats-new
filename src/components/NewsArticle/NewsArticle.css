@@ -1,8 +1,22 @@
 .article-card {
+  background-color: white;
   min-width: 250px;
-  max-width: 350px;
+  max-width: 360px;
+  padding: 0 25px;
+  margin: 20px 20px 30px 40px;
+  height: 380px;
 }
 
 .article-card img {
   height: 150px;
+}
+
+@media only screen and (max-width: 1422px) {
+  .article-card {
+    max-width: 520px;
+  }
+
+  .article-card img {
+    height: 170px;
+  }
 }
