@@ -5,9 +5,22 @@
 }
 
 .app {
-  display: flex;
   background: #141527;
   height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+.page-title {
+  color: white;
+  display: inline-block;
+  margin: 26px 200px 36px 30px;
+}
+
+main {
+  display: flex;
+}
+
+header {
+  text-align: left;
 }
