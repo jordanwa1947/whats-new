@@ -14,7 +14,6 @@ describe('SearchForm', () => {
   })
 
   it('should invoke the searchArticles method when search is clicked', () => {
-    Date.now = jest.fn().mockImplementation(()=> 12345)
     const mockSearchArticles = jest.fn();
     const { getByText, getByPlaceholderText } = render(<SearchForm
       searchArticles={mockSearchArticles}
