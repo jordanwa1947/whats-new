@@ -22,16 +22,16 @@ class SearchForm extends React.Component {
 
   render() {
     return (
-      <form>
+      <form className="search-form">
         <input
           type="text"
           value={this.state.query}
-          onChange={this.handleChange} 
+          onChange={this.handleChange}
           placeholder='Search'
         />
         <button type="button" onClick={this.handleSearch}>
-          Search<
-        /button>
+          Search
+        </button>
       </form>
     )
   }
